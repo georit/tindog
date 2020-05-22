@@ -18,6 +18,13 @@ h1 {
     line-height: 1.5;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
                     /* ===================NAVIGATION BAR===================== */
 
 .navbar {
@@ -28,6 +35,7 @@ h1 {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
     font-weight: bold;
+    text-transform: lowercase;
 }
 
 .nav-item {
@@ -36,7 +44,7 @@ h1 {
 
 .nav-link {
     font-size: 1.2rem;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-weight: 300;
 }
 
@@ -51,6 +59,7 @@ h1 {
 .title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
 }
 
                     /* ===================FEATURES===================== */
@@ -58,17 +67,22 @@ h1 {
 
 #features {
     padding: 7% 15%;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
 }
 
 .feature-set {
     text-align: center;
+    padding: 5%;
 }
 
-.feature-icon {
+.icon {
     color: #ef8172;
+    margin-bottom: 10px;
 }
 
-.feature-icon:hover {
+.icon:hover {
     color: #ff4c68;
 }
 
@@ -80,4 +94,80 @@ h1 {
 
 .feature-description {
     color: #8f8f8f;
+}
+
+                        /* ===================TESTIMONIALS===================== */
+
+#testimonials { 
+    background: #ef8172;
+    text-align: center;
+    color: #ffffff;
+}
+
+.testimonial-text::before {
+    content: "\201C";
+    color: #ff4c68;
+}
+
+.testimonial-text::after {
+    content: "\201D";
+    color: #ff4c68;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 25px;
+}
+
+.testimonial-location {
+    color: #ff4c68;
+    font-weight: bold;
+}
+
+#press {
+    background: #ef8172;
+    text-align: center;
+    padding: 3% 0 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15% 4%;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+                    /* ===================PRICING===================== */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.card-header {
+    background: #000000;
+    color: #ffffff;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.price-btn-2, .price-btn-3 {
+    background: #ff4c68;
+    border: none;
+}
+
+.price-btn-1 {
+    border: solid #ff4c68;
+    background: rgba(255, 76, 104, 0);
 }
