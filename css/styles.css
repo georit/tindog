@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -60,6 +60,7 @@ h2 {
     width: 60%;
     transform: rotate(25deg);
     position: absolute;
+    right: 30%;
 }
 
                     /* ===================FEATURES===================== */
@@ -170,4 +171,69 @@ h2 {
 .price-btn-1 {
     border: solid #ff4c68;
     background: rgba(255, 76, 104, 0);
+}
+
+                    /* ===================TESTIMONIALS===================== */
+
+#cta {
+    text-align: center;
+    padding: 7% 15%;
+    background: #ff4c68;
+}
+
+#cta h3 {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+                    /* ===================TESTIMONIALS===================== */
+
+#footer {
+    text-align: center;
+    background: #ffffff;
+    padding: 3% 15%;
+}
+
+.socials a  {
+    margin: 20px 10px;
+}
+
+.socials a:link {
+    color: #000000;
+}
+
+.socials a:hover, .socials a:active {
+    color: #ff4c68;
+}
+
+                    /* ===================MEDIA QUERIES===================== */
+
+@media (max-width: 1028px) {
+    #title  {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #cta {
+        text-align: center;
+    }
+
+    #footer {
+        text-align: center;
+    }
 }
